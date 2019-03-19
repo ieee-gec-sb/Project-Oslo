@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<html manifest="file.manifest">
+	
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="icon" type = "image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <meta name="description" content="The official website of the IEEE Goa College of Engineering Student Branch">
+    <meta name="apple-mobile-web-app-title" content="IEEE GEC SB Website">
+    <meta name="keywords" content="ieee, gec, goa engineering college , goa college of engineering, ieee gec,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome To IEEE Goa College of Engineering Student Branch Website.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Old+Standard+TT" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> <!-- Fontawesome -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="typed.js/lib/typed.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="scrollreveal/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="top" title="Back to top">
+        <i style="size: 22px;" class="fa fa-angle-up"></i>
+    </button>
+    
+    <nav id="mainNavbar" class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+                <a class="navbar-brand my-0 py-0" data-toggle="modal" data-target="#logoModal" href="#"><img src="img/imgs/ieeesb_transparent_logo.png" height="40px" id="brand_logo" alt="IEEE_GEC_logo"></a>
+                <button class="navbar-toggler" id="toggleButton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class=""><i class="far fa-caret-square-down"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="navbar-nav mr-auto" id="darkBG">
+                    <a class="nav-link nav-item navbarLinks mx-2" id="" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>               
+                    <a class="nav-link nav-item navbarLinks mx-2" href="#"><i class="fas fa-camera-retro"></i> Gallery</a>                    
+                    <a class="nav-link nav-item navbarLinks mx-2" href="#"><i class="fas fa-award"></i> Achievements</a>                        
+                    <a class="nav-link nav-item navbarLinks mx-2" href="#"><i class="fas fa-peace"></i> Placeholder</a>
+                  </div>
+                </div>
+        </div>
+    </nav>
+<script>
+    $(function() {
+	$(document).scroll(function() {
+		var $nav = $('#mainNavbar');
+		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height()); // css/transition effect
+		$nav.toggleClass('bg-white', $(this).scrollTop() > $nav.height()); //Background
+		var $navbar_links = $('.navbarLinks');
+		$navbar_links.toggleClass('navbar_link', $(this).scrollTop() > $nav.height()); //hover effect
+		$('#toggleButton').click(function() {
+			var $clickButton = $('#mainNavbar ');
+			$clickButton.toggleClass('bg-white', $(this).scrollTop() < $nav.height()); //toggle dark nav when not scrolling past nav heigh
+		});
+	});
+});
+
+
+
+</script>
+    <script>
+        particlesJS.load('particles-js', 'kevin-custom-particles.json', function () {;
+        });
+    </script>
+    <div class=" jumbotron bg-white col-md-12 col-sm-12 col-xs-12 text-center animated slideInDown">
+        <div id="particles-js">
+          
+                <div class="imp">
+                <div id="typed-strings">
+
+                    <span id="typed" style="letter-spacing: 5px;"></span>
+                    <script>
+                        const typed = new Typed('#typed', {
+                            strings: ["^1001Welcome to the IEEE GEC SB website.",
+                                "Feel free to look around.^3000"
+                            ],
+                            typeSpeed: 45,
+                            loop: false,
+                        });
+                    </script>
+                </div>
+                <br><br>
+           
+                 <button type="button" class="butn" onclick = "location.href = 'https://docs.google.com/forms/d/e/1FAIpQLScQIqg75iZrr24TFU50KaACSAuvijpUaSVRCTchglLga7uKIQ/viewform'"> Join IEEE GEC SB</button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Registration</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form method="POST">
+                            <p style="display: inline-block;">Fill out the form and someone from the team will contact you.
+                                <br>
+                                <span style="color: #be2727">*</span> - Compulsory
+                            </p>
+                            <div class="form-group">
+                                <label>Name
+                                    <span style="color: #be2727">*</span>
+                                </label>
+                                <input autocomplete="name" type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Contact no.
+                                    <span style="color: #be2727">*</span>
+                                </label>
+                                <input autocomplete="mobile" maxlength="10" class="form-control" required> </div>
+                            <div class="form-group">
+                                <label>Year
+                                    <span style="color: #be2727">*</span>
+                                </label>
+                                <select class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Branch
+                                    <span style="color: #be2727">*</span>
+                                </label>
+                                <select class="form-control">
+                                    <option value="CE">Civil Engineering</option>
+                                    <option value="COMP">Computer Engineering</option>
+                                    <option value="EnE">Electrical &amp; Electronics Engineering</option>
+                                    <option value="ETC">Electronics &amp; Telecommunication Engineering</option>
+                                    <option value="IT">Information Technology</option>
+                                    <option value="MECH">Mechanical Engineering</option>
+                                    <option value="MNG">Mining Engineering</option>
+                                </select>
+                            </div>
+                    </div>
+                </div>
+                <p style="text-align: center; display: inline;">The registration fee is US$ 27 (approx. ₹1800). Memberships are to be renewed annually.
+                    <a href="https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=MEMIEEE500" target="_blank">Read more.
+                        <i class="fa fa-external-link" style="font-size:12px;"></i>
+                    </a>
+                </p>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal ends-->
+
+    <div class="vis-mis-wrapper">
+
+        <div class="row">
+            <div id="vision" class="p-5 col-md-6 col-sm-12 col-xs-12">
+                <h1 class="heading">Vision</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum omnis iure sit temporibus est nihil deserunt
+                    illum voluptatem quisquam animi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, rem!
+                </p>
+            </div>
+            <div class="empty"></div>
+
+            <div id="mission" class="p-5 col-md-6 col-sm-12 col-xs-12">
+                <h1 class="heading">Mission</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum omnis iure sit temporibus est nihil deserunt
+                    illum voluptatem quisquam animi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, magnam!
+                </p>
+            </div>
+        </div>
+    </div>
+    <section class="reason">
+        <div class="container">
+            <h1 id="why">Why join IEEE?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima asperiores aut pariatur quisquam
+                laudantum ad provident vero iure suscipit. Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Doloribus deserunt dolorum veritatis, necessitatibus similique laboriosam iure, quod veniam
+                tempore sed quo? Non soluta ea provident libero, fugiat eos fuga dolorum facilis similique atque maiores
+                quos, rem nam neque officia, aspernatur aliquid fugit sit eaque? Tempore culpa dolores saepe facere dolor!</p>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h1 id="benefits-heading">Benefits of joining IEEE</h1>
+            <br>
+            <br>
+            <a href="https://www.ieee.org/membership_services/membership/products/resumelab.html" class="box box-1" target="_blank">
+                <i class="fa fa-chevron-arrow-right fa-fw"></i>
+                IEEE Resume Lab</a>
+            <a href="https://www.ieee.org/publications/subscriptions/products/mdl/overview.html" class="box box-2" target="_blank">
+                <i class="fa fa-chevron-arrow-right fa-fw"></i>
+                IEEE Xplore Digital Library</a>
+            <a href="http://standards.ieee.org/" class="box box-3" target="_blank">
+                <i class="fa fa-chevron-arrow-right fa-fw"></i>
+                IEEE Standards</a>
+            <a href="https://www.ieee.org/education/elearning-library.html" class="box box-4" target="_blank">
+                <i class="fa fa-chevron-arrow-right fa-fw"></i>
+                IEEE eLearning Lab</a>
+            <a href="https://ieee-collabratec.ieee.org/https://ieee-collabratec.ieee.org/" class="box box-5" target="_blank">
+                <i class="fa fa-chevron-arrow-right fa-fw"></i>
+                IEEE Collabratec</a>
+            <a href="http://www.theinstitute.ieee.org/portal/site/tionline/menuitem.d84cc424d6394dd8fb2275875bac26c8/index.jsphttp://www.theinstitute.ieee.org/portal/site/tionline/menuitem.d84cc424d6394dd8fb2275875bac26c8/index.jsp"
+                class="box box-6">
+                <i class="fa fa-chevron-arrow-right fa-fw"></i>
+                The Institute Newsletter</a>
+            <a href="http://www.ieeeusa.org/careers/webinars/" class="box box-7" target="_blank">
+                <i class="fa fa-chevron-arrow-right fa-fw"></i>
+                Career Webinars</a>
+            <a href="https://www.ieee.org/about/special-interest-group-on-humanitarian-technology.html" class="box box-8" target="_blank">
+                <i class="fa fa-chevron-arrow-right fa-fw"></i>
+                IEEE SIGHT</a>
+            <a href="http://innovationatwork.ieee.org/" class="box box-9" target="_blank">
+                <i class="fa fa-chevron-arrow-right fa-fw"></i>
+                IEEE Continuing Education Providers Program</a>
+            <a href="https://www.ieee.org/membership_services/membership/students/awards/index.html" class="box box-10" target="_blank">
+                <i class="fa fa-chevron-arrow-right fa-fw"></i>
+                Student Awards, Scholarships, Fellowships</a>
+            <a href="https://www.ieee.org/membership/students/awards/student-travel-grants.html" class="box box-11" target="_blank">
+                <i class="fa fa-chevron-arrow-right fa-fw"></i>
+                IEEE Student Travel Grants</a>
+            <a href="https://www.ieee.org/membership_services/membership/membernet.html" class="box box-12 hover-right" target="_blank">
+                <i class="fa fa-chevron-arrow-right fa-fw"></i>
+                IEEE memberNet</a>
+            <br>
+
+        </div>
+        <a class='box' style="margin-left: 45%;" href="https://www.ieee.org/membership/benefits/?byCareerPhase=All&byCountry=All#"
+            target="_blank">And more...
+           <i class="fas fa-external-link-alt"></i>
+        </a>
+    </section>
+
+    <section style="background: #f1f1f1;" class="principal">
+        <div class="container">
+            <div class="row princ">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img class="princ-img" src="img/admissiopplwelcome1.jpg" alt="Dr. Vinayak Shet">
+                    <h6 style="margin-top:10px">Dr. Vinayak Shet</h6>
+                </div>
+                <div class="princ-words col-md-6 col-sm-12 col-xs-12">
+                    <h1 class="heading-princ">From the principal</h1>
+                    <br>
+                    <blockquote class="blockquote-reverse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis harum cum eius, praesentium officiis
+                        nam corporis debitis reprehenderit commodi sed blanditiis aspernatur ut asperiores rerum! In quam
+                        ipsa praesentium, doloremque repudiandae veniam voluptates. Veritatis iste temporibus blanditiis
+                        sequi quas deleniti placeat, illum dolor accusantium omnis, voluptas illo animi, asperiores ipsum.</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--
+    <section class="execom">
+        <h1 class="col-md-12 heading-exe">The Executive Committee</h1>
+        <div class="container-fluid">
+            <div class="img-container col-md-3 col-sm-12 col-xs-12">
+                <img style="border: 1px solid;" src="img/favicon.png" alt="1" class="img-responsive rounded-circle img-size">
+                <h4 class="title">Name1</h4>
+                <h5 class="description">Post</h5>
+            </div>
+
+        </div>
+    </section>-->
+    <div class="reach">
+        <div class="container">
+            <div class="row">
+                <div id="contact" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <h1 class="heading">Reach us</h1>
+                    <p class="address">
+                        <i class="fa fa-address-book" style="size: 22px;"></i>
+                        <b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, fugit! </b>
+                    </p>
+                    <br>
+                    <p class="phone">
+                        <i class="fa fa-phone"></i>
+                        <a style="color:#171816;" href="tel:+91-9595959050">+91 9595959050</a>
+                    </p>
+                    <br>
+                    <p class="email">
+                        <i class="fa fa-envelope" style="size:22px;"></i>
+                        <a style="color:#171816;" href="mailto:ieee@gec.in">
+                            <b>ieee@gec.in</b>
+                        </a>
+                    </p>
+                </div>
+                <div id="find-facebook" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h1 class=" heading col-md-12 col-sm-12 col-xs-12">Find us on Facebook</h1>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fm.facebook.com%2FIEEEGECStudentBranch%2F&tabs=timeline&width=335&height=240&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=723793354297327"
+                        width="320" height="240" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+                        allow="encrypted-media"></iframe>
+                </div>
+                <div id="map" class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                    <h1 class="heading">Locate us</h1>
+                    <iframe class="col-sm-12 col-xs-12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61538.338191788105!2d73.980159!3d15.422662000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb258ca176c4668ac!2sGoa+College+of+Engineering!5e0!3m2!1sen!2sus!4v1530610176897"
+                        width="600" height="238" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="border:2px solid wheat;" class="footer col-md-12 col-sm-12 col-xs-12">
+        <p class="text-copyright">IEEE Goa College of Engineering Student Branch Copyright &copy; 2018</p>
+    </footer>
+    <script>
+        //Scroll reveal animations
+        window.sr = ScrollReveal();
+        sr.reveal('#vision', {
+            duration: 1000,
+            origin: 'left',
+            distance: '22px',
+            mobile: false
+        });
+
+        sr.reveal('#mission', {
+            duration: 2000,
+            origin: 'right',
+            distance: '22px',
+            mobile: false
+        });
+
+        sr.reveal('.reason', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '22px',
+            delay: '500',
+            mobile: false
+        });
+
+        sr.reveal('.princ-img', {
+            duration: 2000,
+            origin: 'top',
+            distance: '22px',
+            mobile: false
+        });
+
+        sr.reveal('.princ-words', {
+            duration: 2000,
+            origin: 'right',
+            distance: '22px',
+            mobile: false
+        });
+        sr.reveal('.box', {
+            delay: 200,
+            duration: 1500,
+            mobile: false
+        }, 50);
+    </script>
+
+</body>
+
+</html>
