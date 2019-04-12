@@ -3,6 +3,8 @@ CACHE MANIFEST
 #favicon
 ../img/favicon.png
 
+#hack to help jumbotron bg
+../events/hacktohelp/imgs/hack-2-help-jumbotron-2.jpg
 
 #Reach us
 ../img/adventure-beach-compass-691637.jpg
