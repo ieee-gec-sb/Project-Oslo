@@ -61,7 +61,23 @@ body {
     transition: all 0.3s;
 }
 
+#particles-js{
+    /*background-color: #0f4679;*/
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    height: 100vh;
+    margin-top: -7%;
+    margin-bottom: 0%;
+    padding: 0% 0% 8% 0%;
+} 
 
+#type {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
 
 
 /*Style for contact and footer section*/
