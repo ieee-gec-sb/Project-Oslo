@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<html manifest="file.manifest">
+	
+    <head>
+        <meta charset="UTF-8">
+        <script src="script.js" type="text/javascript"></script>
+        <link rel="icon" type = "image/png" href="../img/favicon.png">
+        <link rel="apple-touch-icon" href="../img/favicon.png">
+        <meta name="description" content="The official website of the IEEE Goa College of Engineering Student Branch">
+        <meta name="apple-mobile-web-app-title" content="IEEE GEC SB Website">
+        <meta name="keywords" content="ieee, gec, goa engineering college , goa college of engineering, ieee gec,">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>IEEE GEC SB | Page Name </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> <!-- Fontawesome -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+            crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="scrollreveal/dist/scrollreveal.min.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Back to top button-->
+        <button onclick="topFunction()" id="top" title="Back to top">
+            <i style="size: 22px;" class="fa fa-angle-up"></i>
+        </button>
+        <!--Back to top ends-->
+
+        <!--Navbar begins-->
+
+        <!--Navbar markup begins-->
+        <nav id="mainNavbar" class="navbar navbar-expand-md fixed-top">
+            <div class="container-fluid">
+                    <a class="navbar-brand my-0 py-0" data-toggle="modal" data-target="#logoModal" href="#"><img src="../img/imgs/ieeesb_transparent_logo.png" height="40px" id="brand_logo" alt="IEEE_GEC_logo"></a>
+                    <button class="navbar-toggler" id="toggleButton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=""><i class="far fa-caret-square-down"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav mr-auto" id="darkBG">
+                        <a class="nav-link nav-item navbarLinks mx-2" id="" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>               
+                        <a class="nav-link nav-item navbarLinks mx-2" href="#"><i class="fas fa-camera-retro"></i> Gallery</a>                    
+                        <a class="nav-link nav-item navbarLinks mx-2" href="#"><i class="fas fa-award"></i> Achievements</a>                        
+                        <a class="nav-link nav-item navbarLinks mx-2" href="#"><i class="fas fa-calendar"></i> Events</a>
+                    </div>
+                    </div>
+            </div>
+        </nav>
+        <!--Navbar markup ends-->
+
+        <!--Navbar script begins-->
+    <script>
+        $(function() {
+        $(document).scroll(function() {
+            var $nav = $('#mainNavbar');
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height()); // css/transition effect
+            $nav.toggleClass('bg-white', $(this).scrollTop() > $nav.height()); //Background
+            var $navbar_links = $('.navbarLinks');
+            $navbar_links.toggleClass('navbar_link', $(this).scrollTop() > $nav.height()); //hover effect
+            $('#toggleButton').click(function() {
+                var $clickButton = $('#mainNavbar ');
+                $clickButton.toggleClass('bg-white', $(this).scrollTop() < $nav.height()); //toggle dark nav when not scrolling past nav heigh
+            });
+        });
+    });
+
+    </script>
+    <!--Navbar script ends-->
+
+    <!--Navbar markup ends-->
+    
+    <!--Relevant content begins here-->
+
+
+    <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br>
+    
+
+
+
+
+
+
+
+
+
+
+    
+    <!--Relevant content ends here-->
+
+    <!--Contact section begins-->
+    <div class="reach">
+        <div class="container">
+            <div class="row">
+                <div id="contact" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <h1 class="heading">Reach us</h1>
+                    <p class="address">
+                        <i class="fa fa-address-book" style="size: 22px;"></i>
+                        <b>  "Bhausaheb Bandodkar Technical Education Complex", Farmagudi, Ponda, Goa 403401 </b>
+                    </p>
+                    <br>
+                    <p class="phone">
+                        <i class="fa fa-phone"></i>
+                        <a style="color:#171816;" href="tel:+91-832-233-6301">+91 832 233 6301</a>
+                    </p>
+                    <br>
+                    <p class="email">
+                        <i class="fa fa-envelope" style="size:22px;"></i>
+                        <a style="color:#171816;" href="mailto:support@ieeegec.org">
+                            <b>support@ieeegec.org</b>
+                        </a>
+                    </p>
+                </div>
+                <div id="find-facebook" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h1 class=" heading col-md-12 col-sm-12 col-xs-12">Find us on Facebook</h1>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fm.facebook.com%2FIEEEGECStudentBranch%2F&tabs=timeline&width=335&height=240&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=723793354297327"
+                        width="320" height="240" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+                        allow="encrypted-media"></iframe>
+                </div>
+                <div id="map" class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                    <h1 class="heading">Locate us</h1>
+                    <iframe class="col-sm-12 col-xs-12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61538.338191788105!2d73.980159!3d15.422662000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb258ca176c4668ac!2sGoa+College+of+Engineering!5e0!3m2!1sen!2sus!4v1530610176897"
+                        width="600" height="238" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer style="border:2px solid wheat;" class="footer col-md-12 col-sm-12 col-xs-12">
+            <p class="text-copyright">IEEE Goa College of Engineering Student Branch Copyright &copy; 2018</p>
+        </footer>
+
+
+
+    </body>
+
+</html>
+</html>
