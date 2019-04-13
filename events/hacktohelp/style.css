@@ -113,6 +113,25 @@ body {
     font-weight: 500;
 }
 
+.nutan-img{
+    height: 0% !important;
+    width: 55%;
+    border-radius: 10px;
+    box-shadow: -2px -1px 12px -2px #000000;
+}
+
+.winner-section{
+    padding-bottom: 0%;
+    margin-bottom: -12%;
+}
+
+.winners-img{
+    height: 65%;
+    width: 75%;
+    border-radius: 10px;
+    box-shadow: -2px -1px 12px -2px #000000;
+}
+
 
 /*Style for contact and footer section*/
 
