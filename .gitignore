@@ -1,1 +1,4 @@
 *.code-workspace
+CODE_OF_CONDUCT.md
+.github/ISSUE_TEMPLATE/**
+CNAME
