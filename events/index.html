@@ -4,7 +4,6 @@
 	
     <head>
         <meta charset="UTF-8">
-        <script src="script.js" type="text/javascript"></script>
         <link rel="icon" type = "image/png" href="../img/favicon.png">
         <link rel="apple-touch-icon" href="../img/favicon.png">
         <meta name="description" content="The official website of the IEEE Goa College of Engineering Student Branch">
@@ -48,27 +47,6 @@
             </div>
         </nav>
         <!--Navbar markup ends-->
-
-        <!--Navbar script begins-->
-    <script>
-        $(function() {
-        $(document).scroll(function() {
-            var $nav = $('#mainNavbar');
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height()); // css/transition effect
-            $nav.toggleClass('bg-white', $(this).scrollTop() > $nav.height()); //Background
-            var $navbar_links = $('.navbarLinks');
-            $navbar_links.toggleClass('navbar_link', $(this).scrollTop() > $nav.height()); //hover effect
-            $('#toggleButton').click(function() {
-                var $clickButton = $('#mainNavbar ');
-                $clickButton.toggleClass('bg-white', $(this).scrollTop() < $nav.height()); //toggle dark nav when not scrolling past nav heigh
-            });
-        });
-    });
-
-    </script>
-    <!--Navbar script ends-->
-
-    <!--Navbar markup ends-->
     
     <!--Relevant content begins here-->
 
@@ -147,9 +125,26 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="script.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script src="scrollreveal/dist/scrollreveal.min.js"></script>
+        <script>
+                // NAVBAR SCRIPT
+                $(function() {
+                $(document).scroll(function() {
+                    var $nav = $('#mainNavbar');
+                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height()); // css/transition effect
+                    $nav.toggleClass('bg-white', $(this).scrollTop() > $nav.height()); //Background
+                    var $navbar_links = $('.navbarLinks');
+                    $navbar_links.toggleClass('navbar_link', $(this).scrollTop() > $nav.height()); //hover effect
+                    $('#toggleButton').click(function() {
+                        var $clickButton = $('#mainNavbar ');
+                        $clickButton.toggleClass('bg-white', $(this).scrollTop() < $nav.height()); //toggle dark nav when not scrolling past nav heigh
+                    });
+                });
+            });
+        </script>
     </body>
 
 </html>
