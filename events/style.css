@@ -61,8 +61,11 @@ body {
     transition: all 0.3s;
 }
 
+/* Style for content */
 
-
+.container-fluid .eventHeader{
+    font-size: 2rem;
+}
 
 /*Style for contact and footer section*/
 
