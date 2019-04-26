@@ -1,0 +1,109 @@
+*{ 
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+/* Navbar style begins*/
+body {
+	padding-top: 2%;
+} /* NAV - Might not be required in Main Page */
+
+#mainNavbar {
+	font-family: 'Oswald', sans-serif;
+} /* NAV - font */
+
+#mainNavbar.scrolled {
+	transition: background 922ms;
+} /* NAV - transition*/
+
+.navbar-nav a:hover {
+	font-weight: 600;
+} /* NAV - hover effect when not scrolled*/
+
+.navbar-nav .navbar_link:hover {
+	/* color: white; */
+	font-weight: 600;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+} /* NAV - on hover properties*/
+ /* navbar syle ends*/
+
+
+/* Style for jump to top button */
+
+#top {
+    height: 50px;
+    width: 50px;
+    display: none; 
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    background-color: #555;
+    color: #f1f1f1;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    opacity: 0.9;
+    font-size:25px;
+}
+
+#top:hover {
+    background-color: #0f4679;
+    color: #eee8e8;
+    padding: 2px;
+    bottom: 25px;  
+    opacity: 1;
+    font-size: 30px;
+    transition: all 0.3s;
+}
+
+#particles-js{
+    /*background-color: #0f4679;*/
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    height: 100vh;
+    margin-top: -7%;
+    margin-bottom: 0%;
+    padding: 0% 0% 8% 0%;
+} 
+
+#type {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+/*Style for contact and footer section*/
+
+.reach{
+    background: url('../img/adventure-beach-compass-691637.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 3%;
+    margin-right: 0%;
+    
+}
+footer{
+    padding: 5px 10px;
+    margin-right: 0px !important;
+    background-color: #0f4679;
+}
+
+.text-copyright{
+    text-align: center;
+    margin: 5px;
+    color: azure;
+    font-size: 15px;
+    font-family: 'Roboto';
+    letter-spacing: 1px;
+    font-weight: 100;
+}
