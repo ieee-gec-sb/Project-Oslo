@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> <!-- Fontawesome -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" defer></script>
     </head>
 
     <body>
@@ -36,9 +36,9 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="navbar-nav mr-auto" id="darkBG">
                         <a class="nav-link nav-item navbarLinks mx-2" id="" href="../"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>               
-                        <a class="nav-link nav-item navbarLinks mx-2" href="#"><i class="fas fa-camera-retro"></i> Gallery</a>                        
+                        <a class="nav-link nav-item navbarLinks mx-2" href="#"><i class="fas fa-camera-retro"></i> Gallery</a>                    
                         <a class="nav-link nav-item navbarLinks mx-2" href="/events/index.html"><i class="fas fa-calendar"></i> Events</a>
-                        <a class="nav-link nav-item navbarLinks mx-2" href="#"><i class="fas fa-info-circle"></i> About</a>
+                        <a class="nav-link nav-item navbarLinks mx-2" href="/about/index.html"><i class="fas fa-info-circle"></i> About</a>
                     </div>
                     </div>
             </div>
@@ -46,9 +46,35 @@
     
     <!--Relevant content begins here-->
 
+    <div class="container mt-5 w-100">
+        <div class="jumbotron bg-dark py-2 text-center">
+                <h3 class="text-white">UPCOMING EVENTS <i class="far fa-calendar"></i></h3>
+        </div>
+    </div>
+
+    <div class="container-fluid w-100">
+        <div class="row justify-content-around py-1">
+            <div class="col-md-3 text-center">
+                <img src="/events/aicssyc2018/imgs/group.JPG" class="img-fluid mt-1" alt="Upcoming Event 1">
+                <a href="/events/aicssyc2018/index.html" class="eventHeader btn btn-outline-info btn-lg my-2">Upcoming Event 1</a>
+            </div>
+            
+            <div class="col-md-3 text-center">
+                <img src="/events/hacktohelp/imgs/coding-starts.jpg" class="img-fluid mt-3 mt-md-1" alt="Upcoming Event 2">
+                <a href="/events/aicssyc2018/index.html" class="eventHeader btn btn-outline-info btn-lg my-2">Upcoming Event 1</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5 w-100">
+        <div class="jumbotron bg-dark py-1 text-center">
+            <h3 class="text-white">PAST EVENTS <i class="far fa-calendar-check"></i></h3>
+        </div>
+    </div>
+
     <div class="container-fluid px-0 w-100">
         <!-- pair 1 -->
-        <div class="row align-items-center">
+        <div class="row align-items-center mx-0">
             <div class="col-md-6 text-center text-primary pt-5 py-md-4 order-1">
                 <a href="/events/aicssyc2018/index.html" class="eventHeader btn btn-outline-primary btn-lg">AICSSYC 2018</a>
             </div>
@@ -56,7 +82,7 @@
                 <img src="/events/aicssyc2018/imgs/group.JPG" class="img-fluid" alt="AICSSYC 2018">
             </div>
         </div>
-        <div class="row align-items-center bg-primary">
+        <div class="row align-items-center bg-primary mx-0">
             <div class="col-md-6 text-center py-4 order-1 order-md-2">
                 <a href="/events/hacktohelp/index.html" class="eventHeader btn btn-primary btn-lg">Hack to Help!</a>
             </div>
@@ -66,7 +92,7 @@
         </div>
 
         <!-- pair 2 -->
-        <div class="row align-items-center">
+        <div class="row align-items-center mx-0">
             <div class="col-md-6 text-center text-primary py-4 order-1">
                 <a href="#" class="eventHeader btn btn-outline-primary btn-lg">EVENT PLACHOLDER 1</a>
             </div>
@@ -74,7 +100,7 @@
                 <img src="/events/aicssyc2018/imgs/group.JPG" class="img-fluid" alt="EVENT PLACEHOLDER 1">
             </div>
         </div>
-        <div class="row align-items-center bg-primary">
+        <div class="row align-items-center bg-primary mx-0">
             <div class="col-md-6 text-center py-4 order-1 order-md-2">
                 <a href="#" class="eventHeader btn btn-primary btn-lg">EVENT PLACHOLDER 2</a>
             </div>
@@ -84,7 +110,7 @@
         </div>
 
         <!-- pair 3 -->
-        <div class="row align-items-center">
+        <div class="row align-items-center mx-0">
             <div class="col-md-6 text-center text-primary py-4 order-1">
                 <a href="#" class="eventHeader btn btn-outline-primary btn-lg">EVENT PLACHOLDER 3</a>
             </div>
@@ -92,7 +118,7 @@
                 <img src="/events/aicssyc2018/imgs/group.JPG" class="img-fluid" alt="EVENT PLACEHOLDER 3">
             </div>
         </div>
-        <div class="row align-items-center bg-primary">
+        <div class="row align-items-center bg-primary mx-0">
             <div class="col-md-6 text-center py-4 order-1 order-md-2">
                 <a href="#" class="eventHeader btn btn-primary btn-lg">EVENT PLACHOLDER 4</a>
             </div>
@@ -102,7 +128,7 @@
         </div>
 
         <!-- pair 4 -->
-        <div class="row align-items-center">
+        <div class="row align-items-center mx-0">
             <div class="col-md-6 text-center text-primary py-4 order-1">
                 <a href="#" class="eventHeader btn btn-outline-primary btn-lg">EVENT PLACHOLDER 5</a>
             </div>
@@ -110,7 +136,7 @@
                 <img src="/events/aicssyc2018/imgs/group.JPG" class="img-fluid" alt="EVENT PLACEHOLDER 5">
             </div>
         </div>
-        <div class="row align-items-center bg-primary">
+        <div class="row align-items-center bg-primary mx-0">
             <div class="col-md-6 text-center py-4 order-1 order-md-2">
                 <a href="#" class="eventHeader btn btn-primary btn-lg">EVENT PLACHOLDER 6</a>
             </div>
@@ -189,7 +215,7 @@
                 });
             });
         </script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>AOS.init();</script>
     </body>
 
