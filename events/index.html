@@ -4,7 +4,6 @@
 	
     <head>
         <meta charset="UTF-8">
-        <script src="script.js" type="text/javascript"></script>
         <link rel="icon" type = "image/png" href="../img/favicon.png">
         <link rel="apple-touch-icon" href="../img/favicon.png">
         <meta name="description" content="The official website of the IEEE Goa College of Engineering Student Branch">
@@ -17,31 +16,17 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> <!-- Fontawesome -->
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-            crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-        <script src="scrollreveal/dist/scrollreveal.min.js"></script>
     </head>
 
     <body>
 
-        <!-- Back to top button-->
         <button onclick="topFunction()" id="top" title="Back to top">
             <i style="size: 22px;" class="fa fa-angle-up"></i>
         </button>
-        <!--Back to top ends-->
 
-        <!--Navbar begins-->
-
-        <!--Navbar markup begins-->
         <nav id="mainNavbar" class="navbar navbar-expand-md fixed-top">
             <div class="container-fluid">
                     <a class="navbar-brand my-0 py-0" data-toggle="modal" data-target="#logoModal" href="../"><img src="../img/imgs/ieeesb_transparent_logo.png" height="40px" id="brand_logo" alt="IEEE_GEC_logo"></a>
@@ -53,63 +38,90 @@
                         <a class="nav-link nav-item navbarLinks mx-2" id="" href="../"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>               
                         <a class="nav-link nav-item navbarLinks mx-2" href="#"><i class="fas fa-camera-retro"></i> Gallery</a>                    
                         <a class="nav-link nav-item navbarLinks mx-2" href="#"><i class="fas fa-award"></i> Achievements</a>                        
-                        <a class="nav-link nav-item navbarLinks mx-2" href="#"><i class="fas fa-calendar"></i> Events</a>
+                        <a class="nav-link nav-item navbarLinks mx-2" href="/events/index.html"><i class="fas fa-calendar"></i> Events</a>
                     </div>
                     </div>
             </div>
         </nav>
-        <!--Navbar markup ends-->
-
-        <!--Navbar script begins-->
-    <script>
-        $(function() {
-        $(document).scroll(function() {
-            var $nav = $('#mainNavbar');
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height()); // css/transition effect
-            $nav.toggleClass('bg-white', $(this).scrollTop() > $nav.height()); //Background
-            var $navbar_links = $('.navbarLinks');
-            $navbar_links.toggleClass('navbar_link', $(this).scrollTop() > $nav.height()); //hover effect
-            $('#toggleButton').click(function() {
-                var $clickButton = $('#mainNavbar ');
-                $clickButton.toggleClass('bg-white', $(this).scrollTop() < $nav.height()); //toggle dark nav when not scrolling past nav heigh
-            });
-        });
-    });
-
-    </script>
-    <!--Navbar script ends-->
-
-    <!--Navbar markup ends-->
     
     <!--Relevant content begins here-->
 
-    <div class=" jumbotron bg-white col-md-12 col-sm-12 col-xs-12 text-center animated slideInDown">
-             <div class="imp">
-                <div id="typed-strings">
-                    <span id="typed" style="letter-spacing: 5px;"></span>
-                       Events
-                </div>    
+    <div class="container-fluid px-0">
+        <!-- pair 1 -->
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-primary pt-5 py-md-4 order-1">
+                <a href="/events/aicssyc2018/index.html" class="eventHeader btn btn-outline-primary btn-lg">AICSSYC 2018</a>
             </div>
-    </div>
-    <br> <br> <br> <br> <br> <br>
-    <br> <br> <br> <br> <br> <br>
-    <br> <br> <br> <br> <br> <br>
-    <br> <br> <br> <br> <br> <br>
-    <br> <br> <br> <br> <br> <br>
-    <br> <br> <br> <br> <br> <br>
-    <br> <br> <br> <br> <br> <br>
+            <div class="col-md-6 py-3 order-2" data-aos="zoom-in-left">
+                <img src="/events/aicssyc2018/imgs/group.JPG" class="img-fluid" alt="AICSSYC 2018">
+            </div>
+        </div>
+        <div class="row align-items-center bg-primary">
+            <div class="col-md-6 text-center py-4 order-1 order-md-2">
+                <a href="/events/hacktohelp/index.html" class="eventHeader btn btn-primary btn-lg">Hack to Help!</a>
+            </div>
+            <div class="col-md-6 py-3 order-2 order-md-1" data-aos="zoom-in-right">
+                <img src="/events/hacktohelp/imgs/everyone.jpg" class="img-fluid" alt="Hack to Help">
+            </div>
+        </div>
+
+        <!-- pair 2 -->
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-primary py-4 order-1">
+                <a href="#" class="eventHeader btn btn-outline-primary btn-lg">EVENT PLACHOLDER 1</a>
+            </div>
+            <div class="col-md-6 py-3 order-2" data-aos="zoom-in-left">
+                <img src="/events/aicssyc2018/imgs/group.JPG" class="img-fluid" alt="EVENT PLACEHOLDER 1">
+            </div>
+        </div>
+        <div class="row align-items-center bg-primary">
+            <div class="col-md-6 text-center py-4 order-1 order-md-2">
+                <a href="#" class="eventHeader btn btn-primary btn-lg">EVENT PLACHOLDER 2</a>
+            </div>
+            <div class="col-md-6 py-3 order-2 order-md-1" data-aos="zoom-in-right">
+                <img src="/events/hacktohelp/imgs/everyone.jpg" class="img-fluid" alt="EVENT PLACHOLDER 2">
+            </div>
+        </div>
+
+        <!-- pair 3 -->
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-primary py-4 order-1">
+                <a href="#" class="eventHeader btn btn-outline-primary btn-lg">EVENT PLACHOLDER 3</a>
+            </div>
+            <div class="col-md-6 py-3 order-2" data-aos="zoom-in-left">
+                <img src="/events/aicssyc2018/imgs/group.JPG" class="img-fluid" alt="EVENT PLACEHOLDER 3">
+            </div>
+        </div>
+        <div class="row align-items-center bg-primary">
+            <div class="col-md-6 text-center py-4 order-1 order-md-2">
+                <a href="#" class="eventHeader btn btn-primary btn-lg">EVENT PLACHOLDER 4</a>
+            </div>
+            <div class="col-md-6 py-3 order-2 order-md-1" data-aos="zoom-in-right">
+                <img src="/events/hacktohelp/imgs/everyone.jpg" class="img-fluid" alt="EVENT PLACHOLDER 4">
+            </div>
+        </div>
+
+        <!-- pair 4 -->
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-primary py-4 order-1">
+                <a href="#" class="eventHeader btn btn-outline-primary btn-lg">EVENT PLACHOLDER 5</a>
+            </div>
+            <div class="col-md-6 py-3 order-2" data-aos="zoom-in-left">
+                <img src="/events/aicssyc2018/imgs/group.JPG" class="img-fluid" alt="EVENT PLACEHOLDER 5">
+            </div>
+        </div>
+        <div class="row align-items-center bg-primary">
+            <div class="col-md-6 text-center py-4 order-1 order-md-2">
+                <a href="#" class="eventHeader btn btn-primary btn-lg">EVENT PLACHOLDER 6</a>
+            </div>
+            <div class="col-md-6 py-3 order-2 order-md-1" data-aos="zoom-in-right">
+                <img src="/events/hacktohelp/imgs/everyone.jpg" class="img-fluid" alt="EVENT PLACHOLDER 6">
+            </div>
+        </div>
+    </div> 
     
 
-    
 
-
-
-
-
-
-
-
-    
     <!--Relevant content ends here-->
 
     <!--Contact section begins-->
@@ -154,8 +166,31 @@
             <p class="text-copyright">IEEE Goa College of Engineering Student Branch Copyright &copy; 2018</p>
         </footer>
 
-
-
+        <!-- All scripts go here! -->
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" defer></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous" defer></script>
+        <script src="script.js" type="text/javascript" async></script>
+        <script src="scrollreveal/dist/scrollreveal.min.js" defer></script>
+        <script>
+                // NAVBAR SCRIPT
+                $(function() {
+                $(document).scroll(function() {
+                    var $nav = $('#mainNavbar');
+                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height()); // css/transition effect
+                    $nav.toggleClass('bg-white', $(this).scrollTop() > $nav.height()); //Background
+                    var $navbar_links = $('.navbarLinks');
+                    $navbar_links.toggleClass('navbar_link', $(this).scrollTop() > $nav.height()); //hover effect
+                    $('#toggleButton').click(function() {
+                        var $clickButton = $('#mainNavbar ');
+                        $clickButton.toggleClass('bg-white', $(this).scrollTop() < $nav.height()); //toggle dark nav when not scrolling past nav heigh
+                    });
+                });
+            });
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
+        <script>AOS.init();</script>
     </body>
 
 </html>
