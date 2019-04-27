@@ -1,8 +1,8 @@
 # 1 Month for most static assets
 <IfModule mod_headers.c>
     <filesMatch "\.(jpg|jpeg|png|gif|js|ico)$">
-        Header set Expires "Thu, 21 May 2020 23:59:59 GMT"
-        Header set Last-Modified "Thu, 21 April 2019 20:00:00 GMT"
+        Header set Expires "Tue, 21 April 2020 23:59:59 GMT"
+        Header set Last-Modified "Sun, 21 April 2019 20:00:00 GMT"
         Header set Cache-Control "max-age=2592000, public"
         # 2592000 seconds = 1 month
     </filesMatch>
