@@ -1,0 +1,8 @@
+# Cache Control
+# 1 Month for most static assets
+
+<filesMatch ".(jpg|jpeg|png|gif|js|ico)$">
+
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch> 
+# 2592000 seconds = 1 Month
