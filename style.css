@@ -101,9 +101,6 @@ body {
     
     margin-top:calc(45% - 11%);
 }
-.princ{
-    padding: 5%
-}
 
 
 img {
@@ -447,6 +444,9 @@ footer{
     bottom: 1px;
 }
 
+/* .princ{
+    padding: 5%
+}
 .heading-princ {
     font-family: 'Advent Pro 600', serif;
     letter-spacing: 2px;
@@ -474,7 +474,7 @@ footer{
     box-shadow:#302f2f; 
     border-radius:8px; 
     box-shadow: 5px 8px 4px -2px #888888;
-}
+} */
 /*  CUSTOM TEXT HIGHLIGHT COLOR
     ::-moz-selection { 
     background-color: #BA9EB0;
